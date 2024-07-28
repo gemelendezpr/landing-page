@@ -22,11 +22,11 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Software Development",
     title: "project 1",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+      "Web Application for Tech Industry Insights and Interview Experiences",
+    stack: [{ name: "JS" }, { name: "React" }, { name: "MongoDB" }, { name: "Express" }, { name: "MUI" }, { name: "Netlify" }],
     image: "/assets/work/thumb1.png",
     live: "",
     github: "",
