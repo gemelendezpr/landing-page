@@ -17,21 +17,21 @@ import {
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const info = [
-  {
-    icon: <FaPhoneAlt />,
-    title: "Phone",
-    description: "(+40) 321 654 876",
-  },
+  // {
+  //   icon: <FaPhoneAlt />,
+  //   title: "Phone",
+  //   description: "(+40) 321 654 876",
+  // },
   {
     icon: <FaEnvelope />,
     title: "Email",
-    description: "youremail@gmail.com",
+    description: "gerardomelendez05@gmail.com",
   },
-  {
-    icon: <FaMapMarkerAlt />,
-    title: "Address",
-    description: "Code Corner, Tech Town 13579",
-  },
+  // {
+  //   icon: <FaMapMarkerAlt />,
+  //   title: "Address",
+  //   description: "Code Corner, Tech Town 13579",
+  // },
 ];
 
 import { motion } from "framer-motion";
@@ -71,9 +71,10 @@ const Contact = () => {
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">Logo Design</SelectItem>
+                    <SelectItem value="est">Software Development</SelectItem>
+                    <SelectItem value="cst">Full Stack Development</SelectItem>
+                    <SelectItem value="cst">Front End Development</SelectItem>
+                    <SelectItem value="mst">UI/UX Design</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
