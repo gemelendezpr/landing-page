@@ -19,7 +19,7 @@ const about = {
   info: [
     {
       fieldName: "Name",
-      fieldValue: "Luke Coleman",
+      fieldValue: "Gerardo Melendez",
     },
     {
       fieldName: "Phone",
