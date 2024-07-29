@@ -139,6 +139,8 @@ const Work = () => {
               slidesPerView={1}
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
+              preloadImages={false}  // Add this line
+              lazy={true}  // Add this line
             >
               {projects.map((project, index) => {
                 return (
