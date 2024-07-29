@@ -35,7 +35,8 @@ const Photo = () => {
         {/* circle */}
         <motion.svg
           className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
-          fill="transparent"
+          // fill="transparent"
+          // fillOpacity="0.5"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -44,7 +45,7 @@ const Photo = () => {
             cy="253"
             r="250"
             stroke="#00ff99"
-            strokeWidth="4"
+            strokeWidth="10"
             strokeLinecap="round"
             strokeLinejoin="round"
             initial={{ strokeDasharray: "24 10 0 0" }}

@@ -391,11 +391,11 @@ video {
 }
   body {
   --tw-bg-opacity: 1;
-  background-color: rgb(28 28 34 / var(--tw-bg-opacity));
+  background-color: rgb(227 221 219 / var(--tw-bg-opacity));
   font-family: var(--font-jetbrainsMono);
   line-height: 2;
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
   .h1 {
   font-size: 48px;
@@ -431,7 +431,7 @@ video {
   }
 }
   .text-outline {
-    -webkit-text-stroke: 1px #ffffff;
+    -webkit-text-stroke: 1px #000000;
   }
 
 *, ::before, ::after {
@@ -999,7 +999,7 @@ video {
 }
 .bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(28 28 34 / var(--tw-bg-opacity));
+  background-color: rgb(227 221 219 / var(--tw-bg-opacity));
 }
 .bg-red-500 {
   --tw-bg-opacity: 1;
@@ -1179,7 +1179,7 @@ video {
 }
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(28 28 34 / var(--tw-text-opacity));
+  color: rgb(227 221 219 / var(--tw-text-opacity));
 }
 .text-slate-50 {
   --tw-text-opacity: 1;
@@ -1209,6 +1209,9 @@ video {
 }
 .text-white\/80 {
   color: rgb(255 255 255 / 0.8);
+}
+.text-black\/80 {
+  color: rgb(0 0 0 / 0.8);
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
@@ -1372,7 +1375,7 @@ video {
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(28 28 34 / var(--tw-text-opacity));
+  color: rgb(227 221 219 / var(--tw-text-opacity));
 }
 
 .hover\:text-slate-900:hover {
