@@ -1133,10 +1133,6 @@ video {
   font-size: 3.75rem;
   line-height: 1;
 }
-.text-8xl {
-  font-size: 6rem;
-  line-height: 1;
-}
 .text-\[22px\] {
   font-size: 22px;
 }
@@ -1164,15 +1160,6 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
-}
-.text-\[44px\] {
-  font-size: 44px;
-}
-.text-\[52px\] {
-  font-size: 52px;
-}
-.text-\[48px\] {
-  font-size: 48px;
 }
 .font-bold {
   font-weight: 700;
@@ -1231,9 +1218,6 @@ video {
 .text-slate-950 {
   --tw-text-opacity: 1;
   color: rgb(2 6 23 / var(--tw-text-opacity));
-}
-.text-transparent {
-  color: transparent;
 }
 .text-white {
   --tw-text-opacity: 1;
