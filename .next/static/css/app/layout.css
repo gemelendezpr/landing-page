@@ -976,6 +976,16 @@ video {
 .border-white\/20 {
   border-color: rgb(255 255 255 / 0.2);
 }
+.border-black\/20 {
+  border-color: rgb(0 0 0 / 0.2);
+}
+.border-accent\/20 {
+  border-color: rgb(153 2 241 / 0.2);
+}
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-l-transparent {
   border-left-color: transparent;
 }
@@ -999,6 +1009,10 @@ video {
 }
 .bg-black\/80 {
   background-color: rgb(0 0 0 / 0.8);
+}
+.bg-custom-background {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 2 241 / var(--tw-bg-opacity));
 }
 .bg-pink-50\/20 {
   background-color: rgb(253 242 248 / 0.2);

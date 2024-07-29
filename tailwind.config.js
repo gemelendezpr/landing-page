@@ -29,6 +29,7 @@ module.exports = {
           DEFAULT: "#9902f1",
           hover: "#00e187",
         },
+        'custom-background': '#9902f1',
       },
 
       keyframes: {
