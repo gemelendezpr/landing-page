@@ -1,15 +1,20 @@
 {
   "pages": {
-    "/page": [
+    "/services/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/page.js"
+      "static/chunks/app/services/page.js"
     ],
     "/layout": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/css/app/layout.css",
       "static/chunks/app/layout.js"
+    ],
+    "/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/page.js"
     ],
     "/resume/page": [
       "static/chunks/webpack.js",
@@ -21,11 +26,6 @@
       "static/chunks/main-app.js",
       "static/css/app/work/page.css",
       "static/chunks/app/work/page.js"
-    ],
-    "/services/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/services/page.js"
     ],
     "/contact/page": [
       "static/chunks/webpack.js",
