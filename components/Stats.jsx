@@ -13,7 +13,7 @@ const stats = [
   },
   {
     num: 8,
-    text: "Technologies mastered",
+    text: "Technologies experience",
   },
   {
     num: 390,

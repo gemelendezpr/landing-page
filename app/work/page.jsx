@@ -26,7 +26,7 @@ const projects = [
     title: "project 1",
     description:
       "Web Application for Tech Industry Insights and Interview Experiences",
-    stack: [{ name: "JS" }, { name: "React" }, { name: "MongoDB" }, { name: "Express" }, { name: "MUI" }, { name: "Netlify" }],
+    stack: [{ name: "JS" }, { name: "MERN" }, { name: "MUI" }, { name: "Netlify" }],
     image: "/assets/work/thumb1.png",
     live: "",
     github: "",
