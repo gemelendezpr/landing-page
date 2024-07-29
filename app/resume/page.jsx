@@ -15,39 +15,43 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 const about = {
   title: "About me",
   description:
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quibusdam, sunt explicabo inventore.",
+    "My goal is to become a beacon of inspiration, guiding the growth and development of fellow engineers like myself who have taken unconventional paths. Despite facing non-traditional career trajectories, individuals like us have proven that we can make a difference both within and outside the company.",
   info: [
     {
       fieldName: "Name",
       fieldValue: "Gerardo Melendez",
     },
+    // {
+    //   fieldName: "Phone",
+    //   fieldValue: "(+40) 321 654 678",
+    // },
+    // {
+    //   fieldName: "Experience",
+    //   fieldValue: "12+ Years",
+    // },
     {
-      fieldName: "Phone",
-      fieldValue: "(+40) 321 654 678",
+      fieldName: "LinkedIn",
+      fieldValue: "gemelendezpr",
     },
+    // {
+    //   fieldName: "Nationality",
+    //   fieldValue: "American",
+    // },
+    // {
+    //   fieldName: "Email",
+    //   fieldValue: "gerardomelendez05@gmail.com",
+    // },
     {
-      fieldName: "Experience",
-      fieldValue: "12+ Years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "luke.01",
-    },
-    {
-      fieldName: "Nationality",
-      fieldValue: "American",
-    },
-    {
-      fieldName: "Email",
-      fieldValue: "luke.01@gmail.com",
-    },
-    {
-      fieldName: "Freelance",
-      fieldValue: "Available",
+      fieldName: "Job Status",
+      fieldValue: "Open to work",
     },
     {
       fieldName: "Languages",
       fieldValue: "English, Spanish",
+    },
+    {
+      fieldName: "Email",
+      fieldValue: "gerardomelendez05@gmail.com",
     },
   ],
 };
@@ -212,8 +216,8 @@ const Resume = () => {
             {/* experience */}
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl text-accent font-bold">{experience.title}</h3>
+                <p className="max-w-[600px] text-black/60 mx-auto xl:mx-0">
                   {experience.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -244,8 +248,8 @@ const Resume = () => {
             {/* education */}
             <TabsContent value="education" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl text-accent font-bold">{education.title}</h3>
+                <p className="max-w-[600px] text-black/60 mx-auto xl:mx-0">
                   {education.description}
                 </p>
                 <ScrollArea className="h-[400px]">
@@ -277,8 +281,8 @@ const Resume = () => {
             <TabsContent value="skills" className="w-full h-full">
               <div className="flex flex-col gap-[30px]">
                 <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  <h3 className="text-4xl text-accent font-bold">{skills.title}</h3>
+                  <p className="max-w-[600px] text-black/60 mx-auto xl:mx-0">
                     {skills.description}
                   </p>
                 </div>
@@ -311,8 +315,8 @@ const Resume = () => {
               className="w-full text-center xl:text-left"
             >
               <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                <h3 className="text-4xl text-accent font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-black/60 mx-auto xl:mx-0">
                   {about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
@@ -322,7 +326,7 @@ const Resume = () => {
                         key={index}
                         className="flex items-center justify-center xl:justify-start gap-4"
                       >
-                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-black/60">{item.fieldName}</span>
                         <span className="text-xl">{item.fieldValue}</span>
                       </li>
                     );

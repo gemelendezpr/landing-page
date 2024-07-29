@@ -675,9 +675,6 @@ video {
 .mb-9 {
   margin-bottom: 2.25rem;
 }
-.mt-2 {
-  margin-top: 0.5rem;
-}
 .mt-32 {
   margin-top: 8rem;
 }
@@ -750,6 +747,9 @@ video {
 .h-\[var\(--radix-select-trigger-height\)\] {
   height: var(--radix-select-trigger-height);
 }
+.h-auto {
+  height: auto;
+}
 .h-full {
   height: 100%;
 }
@@ -761,6 +761,9 @@ video {
 }
 .max-h-96 {
   max-height: 24rem;
+}
+.min-h-\[480px\] {
+  min-height: 480px;
 }
 .min-h-\[60px\] {
   min-height: 60px;
@@ -932,6 +935,9 @@ video {
 .rounded-full {
   border-radius: 9999px;
 }
+.rounded-lg {
+  border-radius: 0.5rem;
+}
 .rounded-md {
   border-radius: 0.375rem;
 }
@@ -961,7 +967,7 @@ video {
 }
 .border-accent {
   --tw-border-opacity: 1;
-  border-color: rgb(0 255 153 / var(--tw-border-opacity));
+  border-color: rgb(153 2 241 / var(--tw-border-opacity));
 }
 .border-slate-200 {
   --tw-border-opacity: 1;
@@ -986,7 +992,7 @@ video {
 }
 .bg-accent {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 255 153 / var(--tw-bg-opacity));
+  background-color: rgb(153 2 241 / var(--tw-bg-opacity));
 }
 .bg-black\/10 {
   background-color: rgb(0 0 0 / 0.1);
@@ -1035,6 +1041,9 @@ video {
 }
 .p-10 {
   padding: 2.5rem;
+}
+.p-3 {
+  padding: 0.75rem;
 }
 .p-6 {
   padding: 1.5rem;
@@ -1175,11 +1184,14 @@ video {
 }
 .text-accent {
   --tw-text-opacity: 1;
-  color: rgb(0 255 153 / var(--tw-text-opacity));
+  color: rgb(153 2 241 / var(--tw-text-opacity));
 }
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+.text-black\/60 {
+  color: rgb(0 0 0 / 0.6);
 }
 .text-black\/80 {
   color: rgb(0 0 0 / 0.8);
@@ -1213,9 +1225,6 @@ video {
 }
 .text-white\/60 {
   color: rgb(255 255 255 / 0.6);
-}
-.text-white\/80 {
-  color: rgb(255 255 255 / 0.8);
 }
 .underline-offset-4 {
   text-underline-offset: 4px;
@@ -1315,7 +1324,7 @@ video {
 }
 
 .group:hover .group-hover\:text-outline-hover {
-    -webkit-text-stroke: 1px #00ff99;
+    -webkit-text-stroke: 1px #9902f1;
   }
 
 .file\:border-0::file-selector-button {
@@ -1347,7 +1356,7 @@ video {
 
 .hover\:bg-accent:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 255 153 / var(--tw-bg-opacity));
+  background-color: rgb(153 2 241 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-accent-hover:hover {
@@ -1374,7 +1383,7 @@ video {
 
 .hover\:text-accent:hover {
   --tw-text-opacity: 1;
-  color: rgb(0 255 153 / var(--tw-text-opacity));
+  color: rgb(153 2 241 / var(--tw-text-opacity));
 }
 
 .hover\:text-primary:hover {
@@ -1461,12 +1470,12 @@ video {
 
 .group:hover .group-hover\:bg-accent {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 255 153 / var(--tw-bg-opacity));
+  background-color: rgb(153 2 241 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:text-accent {
   --tw-text-opacity: 1;
-  color: rgb(0 255 153 / var(--tw-text-opacity));
+  color: rgb(153 2 241 / var(--tw-text-opacity));
 }
 
 .data-\[disabled\]\:pointer-events-none[data-disabled] {
@@ -1493,14 +1502,18 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.data-\[state\=active\]\:bg-white[data-state="active"] {
+.data-\[state\=active\]\:bg-accent[data-state="active"] {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(153 2 241 / var(--tw-bg-opacity));
 }
 
-.data-\[state\=active\]\:text-slate-950[data-state="active"] {
+.data-\[state\=active\]\:font-bold[data-state="active"] {
+  font-weight: 700;
+}
+
+.data-\[state\=active\]\:text-primary[data-state="active"] {
   --tw-text-opacity: 1;
-  color: rgb(2 6 23 / var(--tw-text-opacity));
+  color: rgb(227 221 219 / var(--tw-text-opacity));
 }
 
 .data-\[disabled\]\:opacity-50[data-disabled] {
@@ -1702,16 +1715,6 @@ video {
 .dark\:focus-visible\:ring-slate-300:focus-visible:is(.dark *) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(203 213 225 / var(--tw-ring-opacity));
-}
-
-.dark\:data-\[state\=active\]\:bg-slate-950[data-state="active"]:is(.dark *) {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity));
-}
-
-.dark\:data-\[state\=active\]\:text-slate-50[data-state="active"]:is(.dark *) {
-  --tw-text-opacity: 1;
-  color: rgb(248 250 252 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
