@@ -13,13 +13,12 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="h3 text-black/80">Hello, I'm</span>
+            <span className="h3 text-black/60">Hello, I'm</span>
             <h1 className="h1 text-accent mb-6">
               Gerardo Melendez<br /> <span className="text-black h2">Software Developer</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-black/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+            <p className="max-w-[500px] mb-9 text-black/60">
+            Eager to leverage advanced technologies to enhance user interactions and optimize processes, with a focus on developing dynamic software solutions that drive success and adaptability across various industries.
             </p>
             {/* btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

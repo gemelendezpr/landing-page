@@ -24,12 +24,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: "#edecee",
+        primary: "#eeece5",
         accent: {
-          DEFAULT: "#9902f1",
-          hover: "#331645",
+          DEFAULT: "#f35422",
+          hover: "#111111",
         },
-        'custom-background': '#9902f1',
+        'custom-background': '#f35422',
       },
 
       keyframes: {
