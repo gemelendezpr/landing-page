@@ -14,14 +14,14 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from "react-icons/fa";
 
 const info = [
-  // {
-  //   icon: <FaPhoneAlt />,
-  //   title: "Phone",
-  //   description: "(+40) 321 654 876",
-  // },
+  {
+    icon: <FaLinkedin />,
+    title: "LinkedIn",
+    description: "www.linkedin.com/in/gerardomelendezpr",
+  },
   {
     icon: <FaEnvelope />,
     title: "Email",
