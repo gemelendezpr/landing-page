@@ -99,34 +99,24 @@ const education = {
     "Building a strong foundation through diverse educational experiences, continuous learning, and practical application, staying at the forefront of technology and innovation.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development Bootcamp",
-      duration: "2023",
+      institution: "Live Virtual Course",
+      degree: "Codesmith CS Prep",
+      duration: "June 2024",
     },
     {
-      institution: "Codecademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "Live Virtual Course",
+      degree: "Codesmith JSB",
+      duration: "May 2024",
     },
     {
-      institution: "Online Course",
-      degree: "Programming Course",
-      duration: "2020 - 2021",
+      institution: "Ironhack- Miami",
+      degree: "Full Stack Web Development",
+      duration: "Oct 2023 - Jan 2024",
     },
     {
-      institution: "Tech Institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      institution: "Design School",
-      degree: "Diploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
+      institution: "Inter-American University of Puerto Rico",
+      degree: "Bachelor of Science, Natural Sciences",
+      duration: "2020",
     },
   ],
 };

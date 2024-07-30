@@ -25,33 +25,33 @@ const projects = [
     category: "Software Development",
     title: "project 1",
     description:
-      "Web Application for Tech Industry Insights and Interview Experiences",
+      "Web application for tech industry insights and interview experiences.",
     stack: [{ name: "JS" }, { name: "MERN" }, { name: "MUI" }, { name: "Netlify" }],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://interviewlens.netlify.app/",
+    github: "https://github.com/gemelendezpr/Job-Application-Tracker-Client/tree/main",
   },
   {
     num: "02",
     category: "fullstack",
     title: "project 2",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
+      "Intuitive workout tracker and exercise library.",
+    stack: [{ name: "JS" }, { name: "MaterialUI" }, { name: "Node.js" }],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://main--marvelous-mandazi-7df721.netlify.app",
+    github: "https://github.com/gemelendezpr/fitness-app",
   },
   {
     num: "03",
     category: "frontend",
     title: "project 3",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate magnam modi.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+      "E-Commerce app with admin dashboard",
+    stack: [{ name: "JS" }, { name: "CSS" }],
     image: "/assets/work/thumb3.png",
     live: "",
-    github: "",
+    github: "https://github.com/gemelendezpr/react-app-mini-project1",
   },
 ];
 
