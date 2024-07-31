@@ -116,7 +116,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               />
-              <Button type="submit" size="md" className="max-w-40">
+              <Button className="bg-custom-background text-white max-w-40" type="submit" size="md">
                 Send message
               </Button>
             </form>
@@ -130,7 +130,7 @@ const Contact = () => {
                       <div className="text-[28px]">{item.icon}</div>
                     </div>
                     <div className="flex-1">
-                      <p className="text-white/60">{item.title}</p>
+                      <p className="text-black/60">{item.title}</p>
                       <h3 className="text-xl">{item.description}</h3>
                     </div>
                   </li>
