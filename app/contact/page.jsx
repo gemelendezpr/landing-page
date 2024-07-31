@@ -53,8 +53,7 @@ const Contact = () => {
             <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum
-                nihil sapiente pariatur id totam.
+              Ready to transform innovative concepts into cutting-edge solutions. Contact me to explore new opportunities together.
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -72,9 +71,9 @@ const Contact = () => {
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
                     <SelectItem value="est">Software Development</SelectItem>
-                    <SelectItem value="cst">Full Stack Development</SelectItem>
-                    <SelectItem value="cst">Front End Development</SelectItem>
-                    <SelectItem value="mst">UI/UX Design</SelectItem>
+                    <SelectItem value="cst">Web Development</SelectItem>
+                    <SelectItem value="cst">UI/UX Design</SelectItem>
+                    <SelectItem value="mst">SEO</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
