@@ -47,7 +47,7 @@ const Contact = () => {
         process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
         process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
         {
-          to_name: 'Gerard', // you can customize this or take it as input
+          to_name: 'Recipient Name', // you can customize this or take it as input
           firstname: formData.firstname,
           lastname: formData.lastname,
           email: formData.email,
@@ -116,7 +116,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               />
-              <Button type="submit" size="md" className="bg-custom-background text-white max-w-40">
+              <Button type="submit" size="md" className="max-w-40">
                 Send message
               </Button>
             </form>
