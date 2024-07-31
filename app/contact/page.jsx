@@ -1,20 +1,13 @@
 "use client";
 
+import { useState } from "react";
+import emailjs from "emailjs-com";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectLabel,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
-
-import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaLinkedin } from "react-icons/fa";
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { FaPhoneAlt, FaEnvelope, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const info = [
   {
@@ -27,16 +20,55 @@ const info = [
     title: "Email",
     description: "gerardomelendez05@gmail.com",
   },
-  // {
-  //   icon: <FaMapMarkerAlt />,
-  //   title: "Address",
-  //   description: "Code Corner, Tech Town 13579",
-  // },
 ];
 
-import { motion } from "framer-motion";
-
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    phone: "",
+    service: "",
+    message: "",
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          to_name: 'Gerard', // you can customize this or take it as input
+          firstname: formData.firstname,
+          lastname: formData.lastname,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          message: formData.message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          alert('Message Sent!');
+        },
+        (error) => {
+          console.log(error.text);
+          alert('Message not sent!');
+        }
+      );
+  };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -48,47 +80,47 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
-          {/* form */}
           <div className="xl:w-[54%] order-2 xl:order-none">
-            <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl"
+            >
               <h3 className="text-4xl text-accent">Let's work together</h3>
               <p className="text-white/60">
-              Ready to transform innovative concepts into cutting-edge solutions. Contact me to explore new opportunities together.
+                Ready to transform innovative concepts into cutting-edge solutions. Contact me to explore new opportunities together.
               </p>
-              {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input type="text" name="firstname" placeholder="Firstname" value={formData.firstname} onChange={handleChange} />
+                <Input type="text" name="lastname" placeholder="Lastname" value={formData.lastname} onChange={handleChange} />
+                <Input type="email" name="email" placeholder="Email address" value={formData.email} onChange={handleChange} />
+                <Input type="tel" name="phone" placeholder="Phone number" value={formData.phone} onChange={handleChange} />
               </div>
-              {/* select */}
-              <Select>
+              <Select name="service" onValueChange={(value) => setFormData({ ...formData, service: value })}>
                 <SelectTrigger className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
-                    <SelectItem value="est">Software Development</SelectItem>
-                    <SelectItem value="cst">Web Development</SelectItem>
-                    <SelectItem value="cst">UI/UX Design</SelectItem>
-                    <SelectItem value="mst">SEO</SelectItem>
+                    <SelectItem value="Software Development">Software Development</SelectItem>
+                    <SelectItem value="Web Development">Web Development</SelectItem>
+                    <SelectItem value="UI/UX Design">UI/UX Design</SelectItem>
+                    <SelectItem value="SEO">SEO</SelectItem>
                   </SelectGroup>
                 </SelectContent>
               </Select>
-              {/* textarea */}
               <Textarea
                 className="h-[200px]"
+                name="message"
                 placeholder="Type your message here."
+                value={formData.message}
+                onChange={handleChange}
               />
-              {/* btn */}
-              <Button size="md" className="max-w-40">
+              <Button type="submit" size="md" className="max-w-40">
                 Send message
               </Button>
             </form>
           </div>
-          {/* info */}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => {
