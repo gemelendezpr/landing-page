@@ -116,7 +116,7 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
               />
-              <Button className="bg-custom-background text-white max-w-40" type="submit" size="md">
+              <Button type="submit" size="md" className="bg-custom-background text-white max-w-40">
                 Send message
               </Button>
             </form>
