@@ -137,10 +137,11 @@ const Work = () => {
             <Swiper
               spaceBetween={30}
               slidesPerView={1}
+              loop={false} //optimization
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
-              preloadImages={false}  // Add this line
-              lazy={true}  // Add this line
+              preloadImages={false}  //optimization
+              lazy={true}  //optimization
             >
               {projects.map((project, index) => {
                 return (
@@ -154,7 +155,7 @@ const Work = () => {
                           src={project.image}
                           fill
                           className="object-cover"
-                          alt=""
+                          alt={`${project.title} project thumbnail by Gerardo Melendez`}
                         />
                       </div>
                     </div>

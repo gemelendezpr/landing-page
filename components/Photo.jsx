@@ -24,11 +24,12 @@ const Photo = () => {
         >
           <Image
             src="/assets/photo.png"
-            priority
+            // priority
             quality={100}
             fill
-            alt=""
+            alt="Gerardo Melendez profile picture"
             className="object-contain"
+            loading="lazy"
           />
         </motion.div>
 
