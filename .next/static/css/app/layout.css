@@ -666,14 +666,14 @@ video {
 .mb-16 {
   margin-bottom: 4rem;
 }
-.mb-20 {
-  margin-bottom: 5rem;
-}
 .mb-40 {
   margin-bottom: 10rem;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.mb-7 {
+  margin-bottom: 1.75rem;
 }
 .mb-8 {
   margin-bottom: 2rem;
@@ -782,9 +782,6 @@ video {
 }
 .min-h-\[80vh\] {
   min-height: 80vh;
-}
-.min-h-screen {
-  min-height: 100vh;
 }
 .w-10 {
   width: 2.5rem;
@@ -1971,8 +1968,8 @@ video {
     padding-bottom: 0px;
   }
 
-  .xl\:pb-24 {
-    padding-bottom: 6rem;
+  .xl\:pb-12 {
+    padding-bottom: 3rem;
   }
 
   .xl\:pt-0 {
@@ -1981,10 +1978,6 @@ video {
 
   .xl\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .xl\:pb-12 {
-    padding-bottom: 3rem;
   }
 
   .xl\:text-left {
