@@ -1,6 +1,7 @@
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Head from "next/head";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 
 // components
 import Header from "@/components/Header";
@@ -22,23 +23,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        {/* Google tag (gtag.js) */}
-        <script
-          async
-          src="https://www.googletagmanager.com/gtag/js?id=G-582ETWRGKP"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-582ETWRGKP');
-            `,
-          }}
-        />
+      <title>{metadata.title}</title>
+      <meta name="description" content={metadata.description} />
       </Head>
       <body className={jetbrainsMono.variable}>
+        <GoogleAnalytics />
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
