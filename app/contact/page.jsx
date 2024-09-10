@@ -23,11 +23,11 @@ const info = [
     title: "LinkedIn",
     description: "in/gerardomelendezpr",
   },
-  {
-    icon: <FaEnvelope />,
-    title: "Email",
-    description: "gerardomelendez05@gmail.com",
-  },
+  // {
+  //   icon: <FaEnvelope />,
+  //   title: "Email",
+  //   description: "gerardomelendez05@gmail.com",
+  // },
 ];
 
 const Contact = () => {

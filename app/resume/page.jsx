@@ -49,10 +49,10 @@ const about = {
       fieldName: "Languages",
       fieldValue: "English, Spanish",
     },
-    {
-      fieldName: "Email",
-      fieldValue: "gerardomelendez05@gmail.com",
-    },
+    // {
+    //   fieldName: "Email",
+    //   fieldValue: "gerardomelendez05@gmail.com",
+    // },
   ],
 };
 
